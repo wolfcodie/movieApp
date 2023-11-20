@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: url(./img/bg.jpg), no-repeat; */
+}
+/* global */
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+/* stylle */
+.logo {
+  font-family: "Sevillana", cursive;
+  color: red;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+/* hero */
+.hero-section {
+  min-height: 90vh;
+}
+.card {
+  color: black;
+  background-color: rgb(79, 10, 144);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 380px;
+  width: 45%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card:hover .anime {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.anime {
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  height: 0px;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.anime button {
+  background-color: #0014ff;
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.anime button:hover {
+  background-color: #fff;
+  color: #0014ff;
+}
+.card:hover .anime button {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+/* 
+.durée {
+  color: #868687;
+} */
+.card-body {
+  width: 100%;
+}
+#filter-section {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-poster {
+  width: 200px;
+}
+select {
+  outline: none;
+}
+#filterBtn {
+  width: 100px;
+  height: 60px;
+}
+
+/* card */
+.movie-card {
+  background-color: red;
+}
